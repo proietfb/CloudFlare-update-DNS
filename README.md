@@ -9,3 +9,7 @@ To open crontab file perform `$ crontab -e` and add the following line:
 `*/5 * * * * /usr/bin/python /path/to/cloudflareUpdateDNS.py >/dev/null 2>&1`.
 
 To check crontab log file perform `$ less /var/log/syslog`.
+
+## More resources
+- [Cloudflare API](https://api.cloudflare.com/)
+- [crontab Tutorial](http://www.adminschoice.com/crontab-quick-reference)
