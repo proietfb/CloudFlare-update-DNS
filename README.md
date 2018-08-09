@@ -8,6 +8,8 @@ To open crontab file perform `$ crontab -e` and add the following line:
 
 `*/5 * * * * /usr/bin/python /path/to/cloudflareUpdateDNS.py >/dev/null 2>&1`.
 
+This run python script every 5 minutes.
+
 To check crontab log file perform `$ less /var/log/syslog`.
 
 ## More resources
