@@ -10,7 +10,7 @@ To open crontab file perform `$ crontab -e` and add the following line:
 
 This run python script every 5 minutes.
 
-To check crontab log file perform `$ less /var/log/syslog`.
+To check crontab log file performing `$ less /var/log/syslog`.
 
 ## More resources
 - [Cloudflare API](https://api.cloudflare.com/)
