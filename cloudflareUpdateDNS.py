@@ -20,7 +20,7 @@ url_path = '/zones/{}/dns_records'.format(zoneID)
 r = requests.get(baseURL.format(url_path), headers=headers)
 
 for res in r.json()['result']:
-    if res['content'] != myCurrentIP:       
+    if res['content'] != myCurrentIP and res['type'] == 'A':       
         jsonContent = json.dumps({'type': res['type'], 'name': res['name'], 'content': myCurrentIP, 'proxied': res['proxied']})
         url_path = '/zones/{}/dns_records/{}'.format(zoneID, res['id'])
         url = baseURL.format(url_path)
